@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Yours fitness</title>
+    <!-- <link rel="stylesheet" href="css/style.css"> -->
+    <style>
+      /* Css Reset */
+      @import url("https://fonts.googleapis.com/css2?family=Baloo+Bhaina+2&display=swap");
+
+      body {
+        margin: 0px;
+        padding: 0px;
+        background: url("img/athletic-shirtless-young-sports-man-600w-695401201.jpeg");
+        background-size: cover;
+        background-repeat: no-repeat;
+        color: white;
+        font-weight: bold;
+        font-size: 14px;
+        font-family: "Baloo Bhaina 2", cursive;
+      }
+
+      .left {
+        /* border: 2px solid red; */
+        display: inline-block;
+        position: absolute;
+        top: 27px;
+        left: 24px;
+        width: 316px;
+        height: 200px;
+      }
+
+      .left .backfit {
+        background-image: url("img/download.jpeg");
+        background-size: 111px 111px;
+        background-repeat: no-repeat;
+      }
+
+      .mid {
+        /* border: 2px solid gray; */
+        display: block;
+        width: 551px;
+        margin: 37px auto;
+      }
+
+      .right {
+        /* border: 3px solid blue; */
+        display: inline-block;
+        position: absolute;
+        top: 7px;
+        right: 12px;
+        font-family: "Roboto", sans-serif;
+      }
+
+      .navbar {
+        display: inline-block;
+      }
+
+      .navbar li {
+        display: inline-block;
+      }
+
+      .navbar li a {
+        color: white;
+        text-decoration: none;
+        padding: 15px 16px;
+        font-size: 17px;
+      }
+
+      .navbar li a:hover,
+      .navbar li a.active {
+        text-decoration: underline;
+        color: gray;
+      }
+
+      /* .left img{
+    width: 82px;
+    filter: invert(100%);
+    margin-bottom: 0px;
+    margin-left: 4px;
+} */
+      .left div {
+        color: black;
+        line-height: 182px;
+        margin-right: 205px;
+        text-align: center;
+        font-size: 16px;
+      }
+
+      .btn {
+        margin: 6px 7px;
+        padding: 0px 14px;
+        color: white;
+        background-color: black;
+        border-radius: 11px;
+        font-size: 16px;
+        cursor: pointer;
+        font-family: "Baloo Bhaina 2", cursive;
+      }
+
+      .btn:hover {
+        background-color: rgb(46, 44, 44);
+      }
+
+      .container {
+        /* border: 3px solid white; */
+        margin: 3px 12px;
+        display: inline-block;
+        padding: 40px 69px;
+        padding-left: 55px;
+        width: 515px;
+        margin-top: 93px;
+        margin: 37px 148px;
+        border-radius: 10px;
+      }
+
+      .container h1 {
+        text-align: center;
+      }
+
+      .formgroup {
+        /* display: inline-block; */
+        /* margin: auto; */
+      }
+
+      .formgroup input {
+        display: block;
+        width: 34px;
+        font-family: "Baloo Bhaina 2", cursive;
+        font-weight: bold;
+        border: 2px solid white;
+        border-end-end-radius: 9px;
+        border-start-start-radius: 4px;
+        margin: 6px auto;
+        padding: 5px 3px 4px 9px;
+        width: 461px;
+        background-color: white;
+        text-align: justify;
+        font-size: 18px;
+      }
+      .formgroup select {
+        display: block;
+        width: 34px;
+        font-family: "Baloo Bhaina 2", cursive;
+        font-weight: bold;
+        border: 2px solid white;
+        border-end-end-radius: 9px;
+        border-start-start-radius: 4px;
+        margin: 6px auto;
+        padding: 5px 3px 4px 9px;
+        width: 481px;
+        background-color: white;
+        text-align: justify;
+        font-size: 18px;
+      }
+      .container .btn {
+        display: block;
+        width: 479px;
+        margin: 29px auto;
+        padding: 6px;
+      }
+      .formgroup .text div {
+        margin: -4px 19px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <header class="header">
+      <!-- left box for logo -->
+      <div class="left">
+        <div class="backfit">Yours fitness</div>
+      </div>
+      <!-- Mid for navbar -->
+      <div class="mid">
+        <ul class="navbar">
+          <li><a href="#" class="active">Home</a></li>
+          <li><a href="#">About us</a></li>
+          <li><a href="#">Fitness Calculator</a></li>
+          <li><a href="#">Contact Us</a></li>
+        </ul>
+      </div>
+      <!-- Right box for buttons -->
+      <div class="right">
+        <button class="btn">Call us now</button>
+        <button class="btn">Email us</button>
+      </div>
+    </header>
+    <div class="container">
+      <h1>Join the Our gym</h1>
+      <form action="noaction">
+        <div class="formgroup">
+          <input type="text" name="" placeholder="Enter your Name" />
+        </div>
+        <div class="formgroup">
+          <input type="date" name="" placeholder="Enter your date of birth" />
+        </div>
+        <div class="formgroup">
+          <select name="" id="">
+            <option>Select your Gender</option>
+            <option>Male</option>
+            <option>Female</option>
+            <option>Rather not to say</option>
+          </select>
+        </div>
+        <div class="formgroup">
+          <div class="text">
+            <div>Enter your Sleeping time</div>
+            <input type="time" name="" placeholder="Enter your Sleeping Time" />
+
+            <div>Enter your Waking time</div>
+            <input type="time" name="" placeholder="Enter your Waking Time" />
+          </div>
+        </div>
+        <button class="btn">Submit</button>
+      </form>
+    </div>
+  </body>
+</html>
